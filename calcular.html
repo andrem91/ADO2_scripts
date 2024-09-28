@@ -10,26 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script>
-      function calcularTotalPedido() {
-        const params = new URLSearchParams(window.location.search);
-        let totalCompa = 0;
-        params.forEach((value) => {
-          totalCompa += Number(value);
-        });
-
-        const totalFormatado = totalCompa.toLocaleString("pt-BR", {
-          style: "currency",
-          currency: "BRL",
-        });
-
-        document.getElementById("total").innerText =
-          "Total da pedido: " + totalFormatado;
-      }
-
-      // Executa a função quando a página carrega
-      window.onload = calcularTotalPedido;
-    </script>
+    <script src="js/calcularPedido.js"></script>
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -80,6 +61,11 @@
         Total da pedido: R$ 0,00
       </p>
     </div>
+
+    <footer class="mt-5">
+      <p class="text-center">Site feito com <span class="text-danger">♥</span> por:</p>
+      <p class="text-center">André Pereira Marques e Brian Cruz Galdino</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
