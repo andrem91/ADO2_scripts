@@ -53,17 +53,22 @@
       </div>
     </nav>
     <!-- FIM Cabeçalho -->
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 60vh">
+      <!-- Data e Hora -->
+      <section id="data-hora">
+        <div class="d-flex justify-content-center">
+          <h1
+            id="relogio"
+            class="p-4 fs-1 fw-bold bg-dark text-light border border-danger border-2 rounded"
+          ></h1>
+        </div>
+        <div class="d-flex justify-content-center mt-2">
+          <p id="calendario" class="fs-4 border-bottom"></p>
+        </div>
+      </section>
 
-    <!-- Data e Hora -->
-    <div class="d-flex justify-content-center mt-4">
-        <h1 id="relogio" class="p-4 fs-1 fw-bold bg-dark text-light border border-danger border-2 rounded"></h1>
+      <!-- FIM Data e Hora -->
     </div>
-    <div class="d-flex justify-content-center">
-        <p id="calendario" class="fs-4 border-bottom"></p>
-    </div>
-    <!-- FIM Data e Hora -->
-
-    
     <!-- Modal de Boas vindas-->
     <div
       class="modal fade"
@@ -97,8 +102,10 @@
       </div>
     </div>
 
-    <footer class="mt-5">
-      <p class="text-center">Site feito com <span class="text-danger">♥</span> por:</p>
+    <footer class="mt-5 border-top border-danger">
+      <p class="text-center mt-4">
+        Site feito com <span class="text-danger">♥</span> por:
+      </p>
       <p class="text-center">André Pereira Marques e Brian Cruz Galdino</p>
     </footer>
     <!-- FIM Modal de Boas vindas-->
